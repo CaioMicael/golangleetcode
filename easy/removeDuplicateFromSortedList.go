@@ -6,6 +6,13 @@ type ListNode struct {
 	Next *ListNode
 }
 
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
 func deleteDuplicates(head *ListNode) *ListNode {
 	aux := head
 	for aux != nil && aux.Next != nil {
